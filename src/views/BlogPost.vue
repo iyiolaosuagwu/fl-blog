@@ -95,6 +95,10 @@ export default {
     font-style: normal;
     font-weight: 900;
     font-size: 32px;
+
+    @include break(small) {
+      font-size: 28px;
+    }
   }
 }
 
