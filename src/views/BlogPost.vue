@@ -6,10 +6,7 @@
         >By Ryan Jackson · {{ this.calculateTime(post.date) }} month ago
       </small>
       <h1 class="individual__title">{{ post.title.rendered }}</h1>
-      <section
-        class="contenct_rendered"
-        v-html="post.content.rendered"
-      ></section>
+      <section v-html="post.content.rendered"></section>
     </main>
 
     <div class="more__article">
@@ -86,6 +83,9 @@ export default {
   column-gap: 10px;
   width: 60%;
   overflow: hidden;
+  @include break(medium) {
+    width: 100%;
+  }
 
   &__date {
     font-size: 12px;

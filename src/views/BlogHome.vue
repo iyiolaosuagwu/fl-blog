@@ -2,11 +2,11 @@
   <LoaderComponent v-if="isFetchingPosts" />
   <div v-else>
     <div class="hero">
-      <div class="hero-left">
+      <div class="hero__left">
         <img :src="mainPost.jetpack_featured_media_url" />
       </div>
-      <div class="hero-right">
-        <div class="content">
+      <div class="hero__right">
+        <div class="hero__content">
           <h6><span class="font-bold">Front-end</span> . 1 Hour Ago</h6>
           <h2 v-html="mainPost.title.rendered"></h2>
           <p v-html="mainPost.excerpt.rendered"></p>
@@ -91,7 +91,7 @@ export default {
   margin-top: 4rem;
   column-gap: 10px;
 
-  &-left {
+  &__left {
     max-width: 500px;
     width: 100%;
     height: 250px;
@@ -103,7 +103,7 @@ export default {
     }
   }
 
-  &-right {
+  &__right {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -121,7 +121,7 @@ export default {
       font-size: 14px;
       line-height: 21px;
     }
-    .content {
+    &__content {
       display: flex;
       flex-direction: column;
       justify-content: space-between;

@@ -70,17 +70,27 @@ export default {
   padding-top: 3rem;
   padding-bottom: 10rem;
   text-align: center;
+
   h2 {
     font-size: 32px;
     line-height: 38px;
-    font-weight: 500;
+    font-weight: 700;
     margin-bottom: 20px;
+
+    @include break(small) {
+      font-size: 28px;
+      font-weight: 700;
+    }
   }
+
   h5 {
     font-size: 22px;
     font-weight: 400;
     color: #6e6e6e;
     line-height: 32px;
+    @include break(small) {
+      font-size: 14px;
+    }
   }
 
   button {
@@ -92,6 +102,7 @@ export default {
     border: none;
     margin-top: 30px;
     cursor: pointer;
+    text-transform: uppercase;
   }
 }
 </style>
