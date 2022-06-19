@@ -1,0 +1,30 @@
+{
+  "name": "blog",
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview --port 4173",
+    "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore"
+  },
+  "dependencies": {
+    "axios": "^0.27.2",
+    "moment": "^2.29.3",
+    "pinia": "^2.0.14",
+    "vue": "^3.2.36",
+    "vue-flutterwave": "^1.0.0",
+    "vue-moment": "^4.1.0",
+    "vue-router": "^4.0.15",
+    "vuex": "^4.0.2"
+  },
+  "devDependencies": {
+    "@rushstack/eslint-patch": "^1.1.0",
+    "@vitejs/plugin-vue": "^2.3.3",
+    "@vue/eslint-config-prettier": "^7.0.0",
+    "eslint": "^8.5.0",
+    "eslint-plugin-vue": "^9.0.0",
+    "prettier": "^2.5.1",
+    "sass": "^1.52.3",
+    "vite": "^2.9.9"
+  }
+}
